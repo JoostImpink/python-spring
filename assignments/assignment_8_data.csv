@@ -1,0 +1,6 @@
+department,type,direct_costs,workstations,employees,square_feet
+tech_support,service,19000,7,4,1000
+payroll,service,22000,2,2,600
+housekeeping,service,16000,1,4,400
+roasting,production,65000,12,40,3500
+packaging,production,44000,8,60,6500
