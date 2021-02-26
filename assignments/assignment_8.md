@@ -50,4 +50,4 @@ with open('assignment_8_data.csv') as f:
 print(data)
 ```
 
-> To get you started, see the following [notebook](assignment_8_heads_up)
+> To get you started, see the following [notebook](assignment_8_heads_up.ipynb)
