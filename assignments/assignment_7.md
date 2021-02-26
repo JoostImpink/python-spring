@@ -1,19 +1,8 @@
-# Assignment 6 - Regression (Cost function estimation)
+# Assignment 7 - Regression (Cost function estimation)
 
 # Tutorials to review
 
-Review [this notebook with regression analysis](https://github.com/justmarkham/DAT4/blob/master/notebooks/08_linear_regression.ipynb)
-
-Note that the code for a linear regression is:
-
-```python
-import statsmodels.formula.api as smf # convention for importing statsmodels
-
-# assuming you have a dataframe `df` with variables `Return` and `Unemployment`
-model = smf.ols(formula="Return ~ Unemployment", data=df)
-result = model.fit()
-result.summary()
-```
+Review this tutorial for [an introduction to pandass](https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/)
 
 ## Hospital cost data
 
@@ -33,9 +22,9 @@ The cost data is for the 100 most common DRGs, for about 3,000 hospitals.
 
 ## Required
 
-Examine the costs of procedures DRG 460 “Spinal fusion except servical” and DRG 853 “Parasitic and infectious diseases” for the hospitals in the dataset. Provide some basic statistics (mean, median, min, max) of the costs. Also, determine if hospitals that have a larger volume charge a lower price or not (in other words: test for positive or negative economies of scale). Do this for both procedures. Youse 'Average Total Payment' as a proxy for the cost.
+Examine the costs of procedures DRG 460 “Spinal fusion except servical” and DRG 853 “Parasitic and infectious diseases” for the hospitals in the dataset. Provide some basic statistics (mean, median, min, max) of the costs. Also, using regression analysis determine if hospitals that have a larger volume charge a lower price or not (in other words: test for positive or negative economies of scale). Do this for both procedures. Youse 'Average Total Payment' as a proxy for the cost.
 
-When you do the regression, include dummy variables to capture differences in costs between States. You can use `C(Provider State)' in your regression. 
+When you do the regression, include dummy variables to capture differences in costs between States. You can use `C(STATE_DESC)' in your regression. 
 
 Example on adding dummies for categorial variables (also see [https://www.statsmodels.org/stable/example_formulas.html#categorical-variables](https://www.statsmodels.org/stable/example_formulas.html#categorical-variables)):
 
