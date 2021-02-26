@@ -49,3 +49,5 @@ with open('assignment_8_data.csv') as f:
     data = [{k: v for k, v in row.items()} for row in csv.DictReader(f, skipinitialspace=True)]
 print(data)
 ```
+
+> To get you started, see the following [notebook](assignment_8_heads_up)
